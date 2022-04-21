@@ -1,0 +1,63 @@
+*body{
+    background-image: url("imag/bg.jpg");
+}
+    
+        .about-sectioin {
+            top: 20%;
+            margin-top: -15px;
+            background: url("bg.jpg") no-repeat left;
+            background-color: #fdfdfd;
+            padding: 100px 0;
+            background-size: 65%;
+            overflow: hidden;
+           
+        }
+
+        .inner-container {
+            width: 55%;
+            padding: 150px;
+            float: right;
+
+        }
+
+        .inner-container h1 {
+            margin-bottom: 30px;
+            font-weight: 800;
+            font-size: 30px;
+            color: rgb(113, 155, 233);
+        }
+
+        .border {
+            height: 4px;
+            width: 150px;
+            background-color: rgb(245, 60, 28);
+        }
+
+        .text {
+            font-size: 13px;
+            color: #1e07e7;
+            line-height: 30px;
+            text-align: justify;
+            margin-bottom: 40px;
+            font-family: sans-serif;
+        }
+
+        .mode {
+            float: right;
+        }
+
+        .change {
+            cursor: pointer;
+            border: 1px solid rgb(240, 236, 236);
+            border-radius: 40%;
+            width: 20px;
+            text-align: center;
+            padding: 5px;
+            margin-left: 8px;
+        }
+
+        .dark {
+            background-color: #000000;
+            color: #ffffff;
+        }
+    

@@ -1,0 +1,77 @@
+{% extends 'googledriveapp/base.html' %} {% block body %} 
+{% for message in messages %}
+<h1>{{message}}</h1>
+{% endfor %}
+<div class="container py-4 bg-warning   sm-col-12" style="height: 500px; width: 500px; background: linear-gradient(-135deg, rgb(222, 62, 227),rgb(146, 212, 224));">
+  <form action="{% url 'signup' %}" method="POST">
+    {% csrf_token %}
+    <div class="mb">
+      <label for="exampleInputEmail1" class="form-label"box-size="10px " width="10%">Username</label>
+      <input
+        type="text"
+        class="form-control"
+        id="exampleInputEmail1"
+        aria-describedby="emailHelp"
+        name="username"
+      />
+    </div>
+    <div class="mb-2">
+      <label for="exampleInputEmail1" class="form-label">Email</label>
+      <input
+        type="email"
+        class="form-control"
+        id="exampleInputEmail1"
+        aria-describedby="emailHelp"
+        name="email"
+      />
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">First Name</label>
+      <input
+        type="text"
+        class="form-control"
+        id="exampleInputEmail1"
+        aria-describedby="emailHelp"
+        name="fname"
+      />
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Last Name</label>
+      <input
+        type="text"
+        class="form-control"
+        id="exampleInputEmail1"
+        aria-describedby="emailHelp"
+        name="lname"
+      />
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label " class="col-sm-2 col-form-label">Password</label>
+      <input
+        type="password"
+        class="form-control"
+        id="exampleInputPassword1"
+        name="password"
+      />
+    </div>
+    <div class="" >
+      <label for="exampleInputPassword1" class="form-label"
+        >Confirm Password</label
+      >
+      <input
+        type="password"
+        class="form-control"
+        id="exampleInputPassword1"
+        name="cpassword"
+      />
+    </div>
+     <div class="mb-5" style="width: 500px; margin-right:20px;"><br>
+    <center >
+    <button type="submit" class="btn btn-primary">Sign Up</button>
+    </center>
+  </form>
+</div>
+</div>
+
+
+{% endblock body %}
